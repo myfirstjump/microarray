@@ -1,0 +1,49 @@
+
+===========
+arguments:=
+===========
+outputPath
+
+
+
+============
+data.table:=
+============
+AB.dt_bk
+AB.dt (remove data by threshold, mean(A,B) <250)
+AB.dt <- AB.l1.dt (data where Index == 1)  265筆
+AB.log2.scale.dt (adjust distribution for clustering)
+
+===========
+functions:=
+===========
+
+probeMedian
+dt_remove_by_threshold
+
+AB_scatter_plot(dt = AB.dt, pid = "PH_NIPT_210017")
+
+
+
+
+
+===========
+Mclust:====
+===========
+centroid:
+> mdg1$parameters$mean 
+        [,1]
+A -1.0429800
+B -0.1610942
+
+
+
+
+
+
+
+
+
+
+
+
